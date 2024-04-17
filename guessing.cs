@@ -7,13 +7,13 @@ public class GuessingGame
 		// Set game parameters
 		int minNumber = 1;
 		int maxNumber = 100;
-		int maxTries = 7;
+		int maxTries = 10;
 		// Generate random number
 		Random random = new Random();
 		int randomNumber = random.Next(minNumber, maxNumber + 1); // Include maxNumber
 		// Welcome message
 		Console.WriteLine("Welcome to the Guessing Game!");
-		Console.WriteLine("I'm thinking of a number between" + minNumber + " and " + maxNumber);
+		Console.WriteLine("I'm thinking of a number between " + minNumber + " and " + maxNumber);
 		Console.WriteLine("You have " + maxTries + " tries to guess it.");
 		// Game loop
 		int guessCount = 0;
